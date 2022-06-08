@@ -1,0 +1,9 @@
+CREATE TABLE pessoas (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT, 
+    NOME varchar(30) NOT NULL,
+    nascimento DATE
+)
+
+INSERT INTO pessoas (nome, nascimento) VALUES ('Matheus Ambrósio', '1995-12-25')
+INSERT INTO pessoas (nome, nascimento) VALUES ('Maria', '2015-03-16')
+INSERT INTO pessoas (nome, nascimento) VALUES ('Ellen', '1995-02-21')
