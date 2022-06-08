@@ -7,3 +7,32 @@ CREATE TABLE pessoas (
 INSERT INTO pessoas (nome, nascimento) VALUES ('Matheus Ambrósio', '1995-12-25')
 INSERT INTO pessoas (nome, nascimento) VALUES ('Maria', '2015-03-16')
 INSERT INTO pessoas (nome, nascimento) VALUES ('Ellen', '1995-02-21')
+
+
+/* Editando Campos */
+
+UPDATE pessoa SET nome='Marcela' WHERE id=5;
+UPDATE pessoa SET genero='M' WHERE ID=1;
+UPDATE pessoa SET genero='F' WHERE ID=2;
+UPDATE pessoa SET genero='F' WHERE id=3;
+UPDATE pessoa SET genero='F' WHERE id=4;
+UPDATE pessoa SET genero='F' WHERE id=6
+
+
+/* Selecionando Tabela para Visualização */
+
+SELECT * FROM pessoa 
+
+/* Ordenando Tabela em ordem Decrescente */
+
+
+SELECT * FROM pessoa ORDER BY nome DESC
+
+/* Deletando Item da Tabela */
+
+DELETE FROM pessoa WHERE id=5
+
+/* Verificando quantidade de cada gênero */
+
+SELECT COUNT(id), genero FROM pessoa GROUP BY genero
+
